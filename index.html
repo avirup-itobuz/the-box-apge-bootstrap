@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/54d4166140.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="nav-bar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-bold nav-logo" href="#">
+            <img
+              class="m-1"
+              src="images/logo/group.png"
+              height="40px"
+              alt=""
+            /><span class="fst-italic">The</span>Box</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link m-2" aria-current="page" href="#">Home</a>
+              <a class="nav-link m-2" href="#">About Us</a>
+              <a class="nav-link m-2" href="#">Project</a>
+              <a class="nav-link m-2" href="#">Services</a>
+              <a class="nav-link m-2" href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="hero d-flex flex-column flex-md-row flex-lg-row">
+      <div
+        class="left d-flex justify-content-center align-items-center position-relative left-100"
+      >
+        <h3 class="fs-1 hero-text text-start mx-5">
+          Building things is our mission.
+        </h3>
+      </div>
+      <div class="right d-flex justify-content-center align-items-end">
+        <div class="card rounded-0 w-75 w-md-90 w-lg-90">
+          <div class="card-body p-0">
+            <h5 class="card-title text-center pt-4 text-light">
+              Feature Projects
+            </h5>
+            <p class="card-text text-center text-light fs-4 px-2">
+              The National University of Architecture
+            </p>
+            <div class="button d-flex">
+              <button
+                type="button"
+                class="btn btn-dark w-100 rounded-0 text-light border border-top-0 border-bottom-0 border-start-0"
+              >
+                <i class="fa-solid fa-arrow-left-long"></i> Back</button
+              ><button
+                type="button"
+                class="btn btn-dark w-100 rounded-0 text-light"
+              >
+                Next
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-reputation p-5">
+      <h2 class="text-center fs-600 pb-4 fw-bold">Our Reputation</h2>
+
+      <div
+        class="reputation d-flex flex-column flex-md-row justify-content-center align-items-center gap-5"
+      >
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/reputation/support.png"
+            class="mx-3 mt-3"
+            width="40px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3">Best Services</h5>
+            <p class="card-text">
+              Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/reputation/support.png"
+            class="mx-3 mt-3"
+            width="40px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3">Best Teams</h5>
+            <p class="card-text">
+              Cursus semper tellus volutpat aliquet lacus.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="images/reputation/pen.png"
+            class="mx-3 mt-3"
+            width="40px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold mb-3">Best Designs</h5>
+            <p class="card-text">
+              Ultricies at ipsum nunc, tristique nam lectus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="about-us">
+      <div class="about-img text-center position-relative">
+        <img style="width: 75%" src="images/about-us/about-us.jpeg" alt="" />
+        <div
+          class=" position-absolute top-50 end-0 translate-middle-y"
+          style="width: 30rem"
+        >
+          <div
+            class="about-box card-body d-flex flex-column justify-content-start align-items-start rounded"
+          >
+            <h5 class="card-title text-start text-white p-4 fw-bold fs-2">About us</h5>
+            <p class="card-text text-start text-white ps-4">
+              For more than 30 years we have been delivering world-class
+              construction and we've built many lasting relationships along the
+              way.
+            </p>
+            <p class="card-text text-start text-white ps-4">
+              We've matured into an industry leader and trusted resource for
+              those seeking quality, innovation and reliability when building in
+              the U.S.We've matured into an industry leader and trusted resource
+              for those seeking quality, innovation and reliability when
+              building in the U.S.s
+            </p>
+            <button href="#" class="btn-white  border-0 ms-4 mb-4 rounded p-3">
+              <h6 class="fs-5">More on Our History</h6>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="about-us">
+      <div
+        class="about-img text-center position-relative d-flex flex-column align-items-center justify-content-center"
+      >
+        <img style="width: 75%" src="images/about-us/about-us.jpeg" alt="" />
+        <div
+          class="about-box card-body d-flex flex-column justify-content-start align-items-start rounded-0"
+          style="width: 75%"
+        >
+          <h5 class="card-title text-start text-white p-4 fw-bold fs-2">
+            About us
+          </h5>
+          <p class="card-text text-start text-white px-4">
+            For more than 30 years we have been delivering world-class
+            construction and we've built many lasting relationships along the
+            way.
+          </p>
+          <p class="card-text text-start text-white px-4">
+            We've matured into an industry leader and trusted resource for those
+            seeking quality, innovation and reliability when building in the
+            U.S.We've matured into an industry leader and trusted resource for
+            those seeking quality, innovation and reliability when building in
+            the U.S.
+          </p>
+          <button href="#" class="btn-white border-0 ms-4 mb-4 rounded p-3">
+            <h6 class="fs-6">More on Our History</h6>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services p-5 mt-3">
+      <h2 class="text-center fs-600 m-5 fw-bold">Services</h2>
+      <div
+        class="service d-flex flex-row flex-wrap gap-5 justify-content-center align-items-center"
+      >
+        <div
+          class="construction d-flex flex-column service-card justify-content-center align-items-center p-5 rounded rounded"
+        >
+          <img
+            src="images/services-icons/construction-icon.png"
+            alt="construction"
+            width="40px"
+          />
+
+          <hr class="line" />
+
+          <h3 class="fw-semibold">Construction</h3>
+        </div>
+        <div
+          class="rennovation d-flex flex-column service-card justify-content-center align-items-center p-5 rounded"
+        >
+          <img
+            src="images/services-icons/rennovation-icon.png"
+            alt="rennovation"
+            width="40px"
+          />
+          <hr class="line" />
+          <h3 class="fw-semibold">Rennovation</h3>
+        </div>
+        <div
+          class="consultation d-flex flex-column service-card justify-content-center align-items-center p-5 rounded"
+        >
+          <img
+            src="images/services-icons/consultation-icon.png"
+            alt="consultation"
+            width="40px"
+          />
+          <hr class="line" />
+
+          <h3 class="fw-semibold">Consultation</h3>
+        </div>
+        <div
+          class="repairservices d-flex flex-column service-card justify-content-center align-items-center p-5 rounded"
+        >
+          <img
+            src="images/services-icons/repair-icon.png"
+            alt="repair"
+            width="40px"
+          />
+          <hr class="line" />
+          <h3 class="fw-semibold">Repair Services</h3>
+        </div>
+        <div
+          class="architecture d-flex flex-column service-card justify-content-center align-items-center p-5 rounded"
+        >
+          <img
+            src="images/services-icons/architecture-icon.png"
+            alt="architecture"
+            width="40px"
+          />
+          <hr class="line" />
+
+          <h3 class="fw-semibold">Architecture</h3>
+        </div>
+        <div
+          class="electric d-flex flex-column service-card justify-content-center align-items-center p-5 rounded"
+        >
+          <img
+            src="images/services-icons/electric-icon.png"
+            alt="electric"
+            width="40px"
+          />
+          <hr class="line" />
+          <h3 class="fw-semibold">Electric</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="get-consultation d-flex flex-column flex-lg-row">
+      <div class="left">
+        <h3 class="text-white fs-1 fw-semibold p-3 my-4 mt-5">
+          Free consultation with exceptional quality
+        </h3>
+        <h3 class="text-white p-3 my-4 mb-5">
+          Just one call away: <span>+84 1102 2703</span>
+        </h3>
+      </div>
+      <div class="right d-flex justify-content-center align-items-center">
+        <button class="w-75 h-25 text-white bg-transparent border-white">
+          Get your consultation
+        </button>
+      </div>
+    </section>
+
+    <section class="form m-auto mb-3 w-100">
+      <div class="m-auto col-10 col-md-7 col-lg-8">
+        <h4 class="m-4 text-center fw-bold">What can us do for you?</h4>
+        <p class="text-center">
+          We are ready to work on a project of any complexity, whether it’s
+          commercial or residential.
+        </p>
+        <form class="" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Name*"
+                value=""
+                required=""
+              />
+              <div class="invalid-feedback">Valid last name is required.</div>
+            </div>
+            <div class="col-sm-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Email*"
+                value=""
+                required=""
+              />
+              <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+            <div class="col-sm-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Reason for Contacting*"
+                value=""
+                required=""
+              />
+              <div class="invalid-feedback">Valid last name is required.</div>
+            </div>
+            <div class="col-sm-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Phone*"
+                value=""
+                required=""
+              />
+              <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+            <div class="col-12">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="message*"
+                style="height: 100px"
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+            <h6><span>*</span> indicates a required field</h6>
+            <button class="m-auto w-75 btn btn-lg rounded-1" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="bottom d-flex flex-column-reverse flex-lg-row">
+      <div class="left p-5">
+        <div class="top d-flex pb-4">
+          <div class="heading">
+            <h3 class="fs-5 my-4 ms-4">ADDRESS:</h3>
+            <h3 class="fs-5 my-4 ms-4">PHONE:</h3>
+            <h3 class="fs-5 my-4 ms-4">EMAIL:</h3>
+          </div>
+          <div class="text pb-4">
+            <h3 class="fs-5 my-4">6391 Elgin St. Celina, Delaware 10299</h3>
+            <h3 class="fs-5 my-4">+84 1102 2703</h3>
+            <h3 class="fs-5 my-4">hello@thebox.com</h3>
+          </div>
+        </div>
+        <div class="down ms-4">
+          <a class="navbar-brand fs-3 fw-bold nav-logo" href="#">
+            <img
+              class="m-1"
+              src="images/logo/group.png"
+              height="40px"
+              alt=""
+            /><span class="fst-italic">The</span>Box</a
+          >
+        </div>
+      </div>
+      <div class="right p-5">
+        <h3 class="fs-5 mx-5">NEWSLETTER:</h3>
+        <input class="my-2 w-50 ms-5" type="text" placeholder="your email here" />
+        <button class="subscribe">Subscribe</button>
+        <h3 class="fs-5 mt-4 mx-5">SOCIALS:</h3>
+        <div class="mx-5">
+          <img src="images/social/facebook.png" alt="facebook" />
+          <img src="images/social/linekdin.png" alt="linkedin" />
+          <img src="images/social/twitter.png" alt="twitter" />
+        </div>
+      </div>
+    </section>
+
+    <div class="footer w-100 m-0">
+      <h4 class="p-4 text-white fs-6 mb-0">
+        TheBox Company © 2022. All Rights Reserved
+      </h4>
+    </div>
+  </body>
+</html>

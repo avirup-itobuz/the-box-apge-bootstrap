@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&display=swap");
+
+* {
+    font-family: "Work Sans", sans-serif;
+}
+
+:root {
+    --blue: #3559C7;
+    --blue: #2947A9;
+    --orange: #F9995D;
+    --grey: #292E3D;
+    --grey-light: #858EAD;
+    --grey-bg: #F6F8F7;
+}
+
+.nav-logo {
+    color: var(--blue) !important;
+}
+
+.nav-link:hover {
+    color: var(--orange) !important;
+    font-weight: 600;
+}
+
+// hero
+
+.hero {
+    background: url(images/hero/hero.png) no-repeat center;
+    background-size: cover;
+    height: 646px;
+
+    .left {
+        flex: 2;
+
+        .hero-text {
+            font-size: 60px !important;
+            font-weight: 600;
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        .card {
+            background-color: var(--blue);
+        }
+    }
+}
+
+//reputation
+.reputation {
+    h2 {
+        color: var(--grey);
+    }
+
+    .card {
+        min-height: 225px;
+    }
+
+    p {
+        color: var(--grey-light);
+    }
+}
+
+//about-us
+.about-us {
+    h6 {
+        color: var(--blue)
+    }
+
+    .about-box {
+        background-color: var(--blue)
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .about-img {
+        position: relative !important;
+        top: 20px;
+        left: -60px;
+    }
+
+    .about-box {
+        width: 30rem !important;
+        position: absolute;
+        top: 20%;
+        left: 60%;
+    }
+}
+
+//services
+.line {
+    width: 50px;
+}
+
+.services {
+    background-color: var(--grey-bg);
+
+    .service-card {
+        width: 300px;
+        transition: transform 0.2s;
+    }
+}
+
+
+.service-card:nth-child(even) {
+    background-color: var(--blue);
+
+    h3 {
+        color: white;
+    }
+}
+
+.service-card:nth-child(odd) {
+    background-color: white;
+
+    h3 {
+        color: var(--blue);
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .service-card {
+        width: 360px !important;
+    }
+}
+
+.service-card:hover {
+    transform: scale(1.1);
+}
+
+//consultation
+.get-consultation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(images/consultation/consultaion-background.jpeg);
+    background-position: center;
+
+    .left {
+        flex: 2;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        button {
+            min-height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+//form
+.form {
+    max-width: 900px;
+    background-color: var(--grey-bg);
+
+    span {
+        color: red;
+    }
+
+    p {
+        color: var(--grey);
+    }
+
+    button {
+        background-color: var(--blue);
+        color: white;
+    }
+}
+
+//bottom
+.bottom {
+    .left {
+        flex: 1;
+    }
+
+    .right {
+        flex: 1;
+
+        .subscribe {
+            background-color: var(--orange) !important;
+        }
+    }
+}
+
+//footer
+.footer {
+    background-color: var(--blue);
+}

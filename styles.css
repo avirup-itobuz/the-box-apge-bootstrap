@@ -12,6 +12,10 @@
   --grey-bg: #F6F8F7;
 }
 
+input:focus {
+  outline: none;
+}
+
 .nav-logo {
   color: var(--blue) !important;
 }
@@ -123,9 +127,27 @@
   margin-bottom: 10px;
 }
 
+.projects .category:hover {
+  border-left: 5px solid var(--blue);
+  padding-left: 15px !important;
+  color: var(--blue);
+  font-weight: 600;
+}
+.projects .project-img, .projects .project-txt {
+  width: 400px;
+}
+.projects .project-img {
+  height: 300px;
+}
+.projects .project-txt {
+  background-color: var(--blue);
+}
+
 .form {
-  max-width: 900px;
   background-color: var(--grey-bg);
+}
+.form .contact {
+  max-width: 700px;
 }
 .form span {
   color: red;
@@ -150,4 +172,6 @@
 
 .footer {
   background-color: var(--blue);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

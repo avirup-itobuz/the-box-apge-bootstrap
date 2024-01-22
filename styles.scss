@@ -12,7 +12,9 @@
     --grey-light: #858EAD;
     --grey-bg: #F6F8F7;
 }
-
+input:focus{
+    outline: none;
+}
 .nav-logo {
     color: var(--blue) !important;
 }
@@ -152,10 +154,30 @@
         }
     }
 }
-
+//projects
+.projects{
+    .category:hover{
+        border-left: 5px solid var(--blue);
+        padding-left: 15px !important;
+        color: var(--blue);
+        font-weight: 600;
+    }
+    .project-img,.project-txt{
+        width: 400px;
+    }
+        .project-img{
+            height: 300px;
+        }
+                .project-txt{
+                    background-color: var(--blue);
+                }
+}
 //form
 .form {
-    max-width: 900px;
+    .contact {
+        max-width: 700px;
+    }
+
     background-color: var(--grey-bg);
 
     span {

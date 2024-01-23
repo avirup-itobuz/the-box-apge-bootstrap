@@ -473,7 +473,7 @@
             <div class="col-sm-6">
               <input
                 type="text"
-                class="form-control focus-ring"
+                class="form-control focus-ring border"
                 placeholder="Your Name*"
                 value=""
                 required=""
@@ -482,7 +482,7 @@
             <div class="col-sm-6">
               <input
                 type="text"
-                class="form-control focus-ring"
+                class="form-control focus-ring border"
                 placeholder="Email*"
                 value=""
                 required=""
@@ -491,7 +491,7 @@
             <div class="col-sm-6">
               <input
                 type="text"
-                class="form-control focus-ring"
+                class="form-control focus-ring border"
                 placeholder="Reason for Contacting*"
                 value=""
                 required=""
@@ -500,7 +500,7 @@
             <div class="col-sm-6">
               <input
                 type="text"
-                class="form-control focus-ring"
+                class="form-control focus-ring border"
                 placeholder="Phone*"
                 value=""
                 required=""
@@ -509,7 +509,7 @@
             <div class="col-12">
               <input
                 type="email"
-                class="form-control pb-5 focus-ring"
+                class="form-control pb-5 focus-ring border"
                 placeholder="message*"
                 style="height: 100px"
               />
@@ -528,11 +528,11 @@
 
     <section class="bottom d-flex flex-column-reverse flex-lg-row">
       <div class="flex-grow-1 py-3">
-        <div class="top d-flex pb-4">
-          <div class="heading">
-            <h3 class="fs-5 mt-4 ms-4">ADDRESS:</h3>
-            <h3 class="fs-5 mt-4 ms-4">PHONE:</h3>
-            <h3 class="fs-5 mt-4 ms-4">EMAIL:</h3>
+        <div class="top d-flex pb-4 d-flex justify-content-center">
+          <div class="heading ms-1">
+            <h3 class="fs-5 mt-4">ADDRESS:</h3>
+            <h3 class="fs-5 mt-4">PHONE:</h3>
+            <h3 class="fs-5 mt-4">EMAIL:</h3>
           </div>
           <div class="text pb-4">
             <h3 class="fs-5 mt-4">6391 Elgin St. Celina, Delaware 10299</h3>
@@ -540,7 +540,7 @@
             <h3 class="fs-5 mt-4">hello@thebox.com</h3>
           </div>
         </div>
-        <div class="down ms-4">
+        <div class="bottom-logo d-flex justify-content-center position-relative">
           <a class="navbar-brand fs-3 fw-bold nav-logo" href="#">
             <img
               class="m-1"
@@ -551,12 +551,14 @@
           >
         </div>
       </div>
-      <div class="flex-grow-1 py-3">
+      <div
+        class="flex-grow-1 py-3 d-flex flex-column justify-content-center align-items-start"
+      >
         <h3 class="fs-5 mx-5">NEWSLETTER:</h3>
         <div class="d-flex">
           <input
             type="text"
-            class="form-control w-50 focus-ring ms-5"
+            class="form-control w-50 focus-ring border ms-5"
             placeholder="Your Email here"
             value=""
             required=""

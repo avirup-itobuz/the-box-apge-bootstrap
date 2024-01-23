@@ -16,7 +16,7 @@
 }
 
 input {
-  --bs-focus-ring-color: rgba(var(--bs-success-rgb), 0);
+  --bs-focus-ring-color: rgba(#fff, 0) !important;
 }
 
 .pointer {
@@ -247,4 +247,8 @@ input {
 
 .subscribe {
   background-color: var(--orange) !important;
+}
+
+.bottom-logo {
+  right: 25%;
 }/*# sourceMappingURL=styles.css.map */

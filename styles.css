@@ -4,16 +4,27 @@
 }
 
 :root {
-  --blue: #3559C7;
-  --blue: #2947A9;
-  --orange: #F9995D;
-  --grey: #292E3D;
-  --grey-light: #858EAD;
-  --grey-bg: #F6F8F7;
+  --blue: #2947a9;
+  --orange: #f9995d;
+  --grey-light: #858ead;
+  --grey-bg: #f6f8f7;
+  --grey-text: #525b7a;
 }
 
-input:focus {
-  outline: none;
+.bg-blue {
+  background-color: var(--blue);
+}
+
+input {
+  --bs-focus-ring-color: rgba(var(--bs-success-rgb), 0);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .nav-logo {
@@ -22,7 +33,19 @@ input:focus {
 
 .nav-link:hover {
   color: var(--orange) !important;
-  font-weight: 600;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.small {
+  height: 20px;
+  width: 20px;
 }
 
 .hero {
@@ -30,22 +53,16 @@ input:focus {
   background-size: cover;
   height: 646px;
 }
-.hero .left {
-  flex: 2;
-}
-.hero .left .hero-text {
+.hero .hero-text {
   font-size: 60px !important;
   font-weight: 600;
 }
-.hero .right {
-  flex: 1;
-}
-.hero .right .card {
-  background-color: var(--blue);
+.hero .feature-projects {
+  max-width: 400px;
 }
 
 .reputation h2 {
-  color: var(--grey);
+  color: var(--grey-text);
 }
 .reputation .card {
   min-height: 225px;
@@ -57,13 +74,9 @@ input:focus {
 .about-us h6 {
   color: var(--blue);
 }
-.about-us .about-box {
-  background-color: var(--blue);
-}
 
 @media screen and (min-width: 1025px) {
   .about-img {
-    position: relative !important;
     top: 20px;
     left: -60px;
   }
@@ -109,20 +122,82 @@ input:focus {
   transform: scale(1.1);
 }
 
+.stats button {
+  min-width: 150px;
+}
+.stats .stat-info {
+  flex: 2;
+}
+.stats .stat-info .stat-box {
+  transform: scale(0.8);
+}
+.stats .stat-info h2 {
+  font-size: 80px;
+}
+.stats .stat-info h3 {
+  border-left: 8px solid orange;
+  color: var(--grey-text);
+}
+.stats .stat-info img {
+  height: 130px;
+  width: 130px;
+}
+.stats .stat-info .stat-box:nth-child(1) > img {
+  top: -20% !important;
+  right: -10%;
+}
+.stats .stat-info .stat-box:nth-child(2) > img {
+  top: -20% !important;
+  right: -25%;
+}
+.stats .stat-info .stat-box:nth-child(3) > img {
+  top: -20% !important;
+  right: -10%;
+}
+.stats .stat-info .stat-box:nth-child(4) > img {
+  top: 50% !important;
+  right: -20%;
+}
+.stats .heading {
+  color: var(--blue);
+}
+.stats .text {
+  color: var(--grey-text);
+}
+
+@media screen and (min-width: 700px) {
+  .stats .stat-box {
+    width: 400px !important;
+    transform: scale(0.9) !important;
+  }
+  .stats .stat-box:nth-child(2) > img {
+    top: -20% !important;
+    left: -20%;
+  }
+  .stats .stat-box:nth-child(1) {
+    left: 120px;
+    top: 80px !important;
+    z-index: 2;
+  }
+  .stats .stat-box:nth-child(2) {
+    left: -80px;
+    top: 40px;
+  }
+  .stats .stat-box:nth-child(3) {
+    left: 120px;
+    top: 0;
+    z-index: 2;
+  }
+  .stats .stat-box:nth-child(4) {
+    left: -60px;
+    top: -60px;
+  }
+}
 .get-consultation {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/consultation/consultaion-background.jpeg);
   background-position: center;
 }
-.get-consultation .left {
-  flex: 2;
-}
-.get-consultation .left span {
-  text-decoration: underline;
-}
-.get-consultation .right {
-  flex: 1;
-}
-.get-consultation .right button {
+.get-consultation button {
   min-height: 50px;
   margin-bottom: 10px;
 }
@@ -133,16 +208,27 @@ input:focus {
   color: var(--blue);
   font-weight: 600;
 }
-.projects .project-img, .projects .project-txt {
-  width: 400px;
+.projects .project-img,
+.projects .project-txt {
+  width: 280px;
 }
 .projects .project-img {
-  height: 300px;
+  height: 250px;
 }
 .projects .project-txt {
   background-color: var(--blue);
 }
+.projects .ellipse {
+  height: 20px;
+  width: 20px;
+}
 
+@media screen and (min-width: 428px) {
+  .projects .project-img,
+  .projects .project-txt {
+    width: 400px;
+  }
+}
 .form {
   background-color: var(--grey-bg);
 }
@@ -153,25 +239,12 @@ input:focus {
   color: red;
 }
 .form p {
-  color: var(--grey);
+  color: var(--grey-text);
 }
 .form button {
   background-color: var(--blue);
-  color: white;
 }
 
-.bottom .left {
-  flex: 1;
-}
-.bottom .right {
-  flex: 1;
-}
-.bottom .right .subscribe {
+.subscribe {
   background-color: var(--orange) !important;
-}
-
-.footer {
-  background-color: var(--blue);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

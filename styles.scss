@@ -21,7 +21,7 @@
 }
 
 input {
-  --bs-focus-ring-color: rgba(#fff, 0) !important;
+  --bs-focus-ring-color: rgba(#fff, 0);
 }
 
 .underline {
@@ -184,22 +184,22 @@ input {
     }
 
     .stat-box:nth-child(1)>img {
-      top: -20% !important;
+      top: -20% ;
       right: -10%;
     }
 
     .stat-box:nth-child(2)>img {
-      top: -20% !important;
+      top: -20% ;
       right: -25%;
     }
 
     .stat-box:nth-child(3)>img {
-      top: -20% !important;
+      top: -20% ;
       right: -10%;
     }
 
     .stat-box:nth-child(4)>img {
-      top: 50% !important;
+      top: 50% ;
       right: -20%;
     }
   }
@@ -231,7 +231,7 @@ input {
 
     .stat-box:nth-child(1) {
       left: 120px;
-      top: 80px !important;
+      top: 80px;
       z-index: 2;
     }
 
@@ -274,7 +274,7 @@ input {
 .projects {
   .category:hover {
     border-left: 5px solid var(--blue);
-    padding-left: 15px !important;
+    padding-left: 15px ;
     color: var(--blue);
     font-weight: 600;
   }
@@ -325,7 +325,7 @@ input {
   }
 
   button {
-    background-color: var(--blue) !important;
+    background-color: var(--blue);
   }
 }
 
@@ -334,11 +334,7 @@ input {
 //bottom
 .bottom {
   h3 {
-    min-height: 45px;
-  }
-
-  h3:nth-child(1) {
-    min-height: 70px;
+    min-height: 38px;
   }
 
   h3.heading {
@@ -346,7 +342,7 @@ input {
   }
 
   .newsletter {
-    min-width: 280px;
+    min-width: 300px;
   }
 
   button {
@@ -359,13 +355,6 @@ input {
   }
 }
 
-@media screen and (min-width:338px) {
-  .bottom {
-    h3:nth-child(1) {
-      min-height: 45px !important;
-    }
-  }
-}
 
 //footer
 .footer-txt {

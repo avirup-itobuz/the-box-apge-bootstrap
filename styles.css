@@ -222,9 +222,20 @@ input {
   color: #292E3D !important;
 }
 
+.projects .categories,
+.projects .heading {
+  min-width: 250px;
+  max-width: 250px;
+}
+.projects .category {
+  border-left: 5px solid white !important;
+  padding-left: 25px;
+  font-weight: 600;
+  color: var(--grey-light);
+}
 .projects .category:hover {
-  border-left: 5px solid var(--blue);
-  padding-left: 15px;
+  border-left: 5px solid var(--blue) !important;
+  padding-left: 25px;
   color: var(--blue);
   font-weight: 600;
 }
@@ -241,6 +252,9 @@ input {
 .projects .circle {
   height: 20px;
   width: 20px;
+}
+.projects .circle-hollow {
+  background-color: var(--grey-bg);
 }
 
 @media screen and (min-width: 428px) {

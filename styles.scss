@@ -184,22 +184,22 @@ input {
     }
 
     .stat-box:nth-child(1)>img {
-      top: -20% ;
+      top: -20%;
       right: -10%;
     }
 
     .stat-box:nth-child(2)>img {
-      top: -20% ;
+      top: -20%;
       right: -25%;
     }
 
     .stat-box:nth-child(3)>img {
-      top: -20% ;
+      top: -20%;
       right: -10%;
     }
 
     .stat-box:nth-child(4)>img {
-      top: 50% ;
+      top: 50%;
       right: -20%;
     }
   }
@@ -272,9 +272,23 @@ input {
 
 //projects
 .projects {
+
+  .categories,
+  .heading {
+    min-width: 250px;
+    max-width: 250px;
+  }
+
+  .category {
+    border-left: 5px solid white !important;
+    padding-left: 25px;
+    font-weight: 600;
+    color: var(--grey-light);
+  }
+
   .category:hover {
-    border-left: 5px solid var(--blue);
-    padding-left: 15px ;
+    border-left: 5px solid var(--blue) !important;
+    padding-left: 25px;
     color: var(--blue);
     font-weight: 600;
   }
@@ -295,6 +309,10 @@ input {
   .circle {
     height: 20px;
     width: 20px;
+  }
+
+  .circle-hollow {
+    background-color: var(--grey-bg);
   }
 }
 
